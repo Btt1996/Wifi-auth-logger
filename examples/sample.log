@@ -1,0 +1,3 @@
+Nov 12 15:32:10 myhost hostapd: wlan0: STA aa:bb:cc:dd:ee:ff WPA: 4-Way Handshake failed - pre-shared key may be incorrect
+Nov 12 15:32:11 myhost hostapd: wlan0: STA 11:22:33:44:55:66 authentication failed
+Nov 12 15:32:30 myhost hostapd: wlan0: STA aa:bb:cc:dd:ee:ff association denied this client is blocked
