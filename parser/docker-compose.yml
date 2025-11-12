@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  wifi-logger:
+    build: .
+    volumes:
+      - ./data:/app/data
+      # Mount your host's hostapd log into the container:
+      - /var/log/hostapd.log:/var/log/hostapd.log:ro
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+
+(If your host writes hostapd logs to a different path, update the left-hand side of the volume mapping.)
