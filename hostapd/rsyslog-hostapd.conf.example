@@ -1,0 +1,5 @@
+# Save hostapd logs to /var/log/hostapd.log
+# Put this file in /etc/rsyslog.d/30-hostapd.conf then restart rsyslog.
+
+if $programname == 'hostapd' then /var/log/hostapd.log
+& stop
